@@ -1,0 +1,78 @@
+{
+  "id": "1C670CA43EDF41CF806B50A3176E2DCE",
+  "label": "Customer",
+  "items": [
+    {
+      "id": "28B68B07BF00494EB19B979C9B2E49F5",
+      "label": "Nacional",
+      "views": [
+        {
+          "id": "EFDEA9763C4447259E2D1C8A1B4B884C",
+          "label": "Fazenda",
+          "country": "BR",
+          "route": "br/farm"
+        },
+        {
+          "id": "DA071170586840D6B4426B26377938A7",
+          "label": "Fazenda",
+          "country": "AR",
+          "route": "ar/farm"
+        }
+      ]
+    },
+    {
+      "id": "9F24CEF733CD41D1B297CE05F83F8D0C",
+      "label": "Internacional",
+      "views": [
+        {
+          "id": "5A1BB7936AC04CFCA925DB076A7EA8B3",
+          "label": "Pensionista",
+          "country": "BR",
+          "route": "br/pensionist"
+        },
+        {
+          "id": "7E668F8281D34ACFB35F0D2230DE9B79",
+          "label": "Pensionista",
+          "country": "AR",
+          "route": "ar/pensionist"
+        }
+      ]
+    },
+    {
+      "id": "9F24CEF733CD41D1B297CE05F83F8D0C",
+      "label": "Partner",
+      "views": [
+        {
+          "id": "5A1BB7936AC04CFCA925DB076A7EA8B3",
+          "label": "Pensionista",
+          "country": "BR",
+          "route": "br/pensionist"
+        },
+        {
+          "id": "7E668F8281D34ACFB35F0D2230DE9B79",
+          "label": "Pensionista",
+          "country": "AR",
+          "route": "ar/pensionist"
+        }
+      ]
+    },
+    {
+      "id": "9F24CEF733CD41D1B297CE05F83F8D0C",
+      "label": "Sensitivedata",
+      "views": [
+        {
+          "id": "5A1BB7936AC04CFCA925DB076A7EA8B3",
+          "label": "Pensionista",
+          "country": "BR",
+          "route": "br/pensionist"
+        },
+        {
+          "id": "7E668F8281D34ACFB35F0D2230DE9B79",
+          "label": "Pensionista",
+          "country": "AR",
+          "route": "ar/pensionist"
+        }
+      ]
+    }
+  ]
+}

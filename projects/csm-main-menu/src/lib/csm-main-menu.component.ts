@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { ISideBarOption, ISideBarMetadata } from '../interfaces';
-
 @Component({
   selector: 'csm-main-menu',
   templateUrl: './csm-main-menu.component.html',
@@ -13,7 +12,7 @@ export class CsmMainMenuComponent {
   public option: ISideBarOption = null;
 
   public onOptionChange(option: ISideBarOption): void {
-    this.option = option
+    this.option = option;
   }
 
 }

@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/csm-main-menu",
       "sourceRoot": "projects/csm-main-menu/src",
-      "prefix": "lib",
+      "prefix": "csm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

@@ -6,7 +6,7 @@
 .UK,
 .UY {
   display: inline-block;
-  background: url('images/flags-sprites.png') no-repeat;
+  background: url('#{$path-to-assets}/images/flags-sprites.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;

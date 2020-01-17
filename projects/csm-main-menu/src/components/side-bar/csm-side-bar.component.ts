@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter, Input } from '@angular/core';
-import { ISideBarMetadata, ISideBarOption, ISideBarOptionItemView } from '../../interfaces'
+import { ISideBarMetadata, ISideBarOption, ISideBarOptionItemView } from '../../interfaces';
 
 @Component({
   selector: 'csm-side-bar',
@@ -8,16 +8,11 @@ import { ISideBarMetadata, ISideBarOption, ISideBarOptionItemView } from '../../
 })
 export class CsmSideBarComponent {
   @Output()
-  public onChange: EventEmitter<ISideBarOption> = new EventEmitter<ISideBarOption>();
+  public changeOption: EventEmitter<ISideBarOption> = new EventEmitter<ISideBarOption>();
 
   @Input()
-  public metadata: ISideBarMetadata
-
+  public metadata: ISideBarMetadata = null;
   public activeOption?: ISideBarOption;
-
-  constructor() {
-    debugger
-  }
 
   onMenuClick(option: ISideBarOption) {
     if (this.activeOption && this.activeOption.id === option.id) {
@@ -26,6 +21,6 @@ export class CsmSideBarComponent {
       this.activeOption = option;
     }
 
-    this.onChange.emit(this.activeOption)
+    this.changeOption.emit(this.activeOption);
   }
 }

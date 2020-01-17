@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CsmMainMenuComponent } from './csm-main-menu.component';
 import { CsmSideBarComponent } from '../components/side-bar/csm-side-bar.component';
 import { CsmMenuRenderComponent } from '../components/menu-render/csm-menu-render.component';
