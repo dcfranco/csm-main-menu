@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CsmMainMenuComponent } from './csm-main-menu.component';
 import { CsmSideBarComponent } from '../components/side-bar/csm-side-bar.component';
 import { CsmMenuRenderComponent } from '../components/menu-render/csm-menu-render.component';
 import { CsmFilterPipe } from '../pipes/csm-filter.pipe';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { CsmFilterPipe } from '../pipes/csm-filter.pipe';
     CsmFilterPipe,
   ],
   imports: [
-    BrowserModule,
+    ApplicationModule,
+    CommonModule,
     FormsModule,
   ],
   exports: [

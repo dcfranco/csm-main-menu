@@ -1,4 +1,20 @@
+@import '../../assets/styles/style';
+
+:host {
+  margin: 0px;
+}
+
 .app-container {
-  display: grid;
-  grid-template-columns: 250px calc(100vw - 260px);
+  display: flex;
+  flex-wrap: nowrap;
+  
+  .sidebar {
+    max-width: $sidebar-width;
+    width: 100%;
+  }
+
+  .content {
+    max-width: calc(100vw - #{$sidebar-width});
+    width: 100%;
+  }
 }

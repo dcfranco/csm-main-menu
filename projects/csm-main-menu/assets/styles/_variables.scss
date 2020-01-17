@@ -14,16 +14,17 @@ $sidebar-link-bg-active-color: $blue;
 $sidebar-link-font-size: 1rem;
 
 // MenuRender Vairables
-$menu-render-sidebar-width: calc(#{$sidebar-width} + 10px);
-$menu-render-y-padding: 50px;
-$menu-render-x-padding: 20px;
+$menu-render-y-padding: 30px;
+$menu-render-x-padding: 30px;
+
+$menu-render-sidebar-width: calc(100vw - #{$sidebar-width});
 
 $menu-render-list-color: $blue;
 $menu-render-list-title-color: $blue;
 $menu-render-list-bg-color: $white;
 $menu-render-list-border-color: $border-gray;
 $menu-render-list-item-country-size: 0.95rem;
-$menu-render-list-item-width: 280px;
+$menu-render-list-item-width: 260px;
 
-$menu-render-search-max-width: 300px;
-$menu-render-search-min-width: 100px;
+$menu-render-search-max-width: $menu-render-list-item-width;
+$menu-render-search-min-width: 160px;
