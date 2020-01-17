@@ -1,0 +1,13 @@
+<nav>
+  <div class="logo"></div>
+  <ul class="ul">
+    <li
+      *ngFor="let option of metadata.options"
+      (click)="onMenuClick(option)"
+      [ngClass]="{ 'active': activeOption && option.id === activeOption.id }"
+    >
+      <a href="#">{{ option.label }}</a>
+    </li>
+  </ul>
+</nav>
+

@@ -1,0 +1,14 @@
+{
+  "name": "@amcom/csm-main-menu",
+  "version": "0.0.13",
+  "description": "CSM Main Menu",
+  "author": {
+    "name": "Daniel Franco",
+    "email": "dafrannco@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  }
+}

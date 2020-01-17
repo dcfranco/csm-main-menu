@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "csm-main-menu": [
+        "dist/csm-main-menu"
+      ],
+      "csm-main-menu/*": [
+        "dist/csm-main-menu/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

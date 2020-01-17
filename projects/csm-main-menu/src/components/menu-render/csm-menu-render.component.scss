@@ -1,0 +1,115 @@
+@import '../../../assets/styles/style';
+
+.menu-render {
+  position: absolute;
+  width: 0vw;
+  height: 100vh;
+  background-color: $menu-render-list-bg-color;
+  transition: width ease-in-out 0.2s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, Helvetica, sans-serif;
+  border: 1px solid $menu-render-list-border-color;
+
+  &.is-open {
+    width: calc(100vw - #{$menu-render-sidebar-width});
+    padding: 15px 50px;
+
+    .search-input {
+      visibility: visible;
+    }
+  }
+
+  .search-input {
+    margin-bottom: 30px;
+    margin-left: -30px;
+    position: relative;
+    min-width: $menu-render-search-min-width;
+    max-width: $menu-render-search-max-width;
+    width: 30%;
+    visibility: hidden;
+
+    .search {
+      border: 2px solid $border-gray;
+      color: $menu-render-list-color;
+      width: 100%;
+      font-size: 0.8rem;
+      padding: 5px 40px 5px 5px;
+    }
+
+    i {
+      position: absolute;
+      right: -30px;
+      top: 6px;
+    }
+  }
+
+  .menu-content {
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(#{$menu-render-list-item-width}, 1fr));
+    overflow-y: scroll;
+    grid-row-gap: $menu-render-y-padding;
+    grid-column-gap: $menu-render-x-padding;
+    overflow-x: hidden;
+
+    .menu-item {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+
+      h2 {
+        color: $menu-render-list-title-color;
+        text-decoration: none;
+        font-weight: normal;
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .menu-item-countries {
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 10px;
+
+        .menu-item-country {
+          font-size: $menu-render-list-item-country-size;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          font-weight: lighter;
+          text-transform: uppercase;
+          margin-right: 10px;
+          margin-left: -2px;
+          padding: 2px 5px;
+          overflow: hidden;
+
+          i {
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            margin-right: 3px;
+          }
+
+          span {
+            color: $menu-render-list-color;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          &:hover {
+            background-color: rgba($menu-render-list-color, 0.3)
+          }
+
+          &.active {
+          }
+        }
+      }
+    }
+  }
+}

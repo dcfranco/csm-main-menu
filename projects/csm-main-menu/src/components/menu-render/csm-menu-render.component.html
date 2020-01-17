@@ -1,0 +1,29 @@
+<div [ngClass]="{ 'menu-render': true, 'is-open': !!option }">
+  <div class="search-input">
+    <input
+      type="text"
+      class="search"
+      [(ngModel)]="search"
+    >
+    <i class="fa fa-search"></i>
+  </div>
+  <div *ngIf="!!option" class="menu-content">
+    <div
+      class="menu-item"
+      *ngFor="let item of option.items | filter : search : 'label'"
+    >
+      <h2>{{ item.label }}</h2>
+      <div class="menu-item-countries">
+        <a
+          href="#"
+          class="menu-item-country"
+          *ngFor="let view of item.views"
+          (click)="onViewClick(view)"
+        >
+          <i [class]="view.country"></i>
+          <span>{{ view.country }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
