@@ -48,6 +48,7 @@
   .menu-content {
     max-height: 100%;
     max-width: 100%;
+    min-width: calc(100vw - #{$menu-render-sidebar-width});
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(#{$menu-render-list-item-width}, 1fr));
     overflow-y: scroll;

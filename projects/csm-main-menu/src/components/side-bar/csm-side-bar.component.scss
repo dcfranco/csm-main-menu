@@ -19,6 +19,8 @@ nav {
     background-size: 70%;
     height: $sidebar-logo-height;
     width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba($sidebar-link-color, 0.4);
   }
 
   ul {
