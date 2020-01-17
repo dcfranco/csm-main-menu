@@ -13,8 +13,14 @@ cd $csmMainMenuProject
 echo "Increase patch version..."
 npm version patch --no-git-tag-version
 
-# Building
 cd '../../'
+
+# Updating Version Number
+git add .
+git commit -m "Updating Version Number"
+git push origin master
+
+# Building
 echo "Building..."
 npm run build
 
@@ -22,10 +28,5 @@ npm run build
 echo "Publishing..."
 cd $csmMainMenuBuilt
 npm publish
-
-# Updating Version Number
-git add .
-git commit -m "Updating Version Number"
-git push origin master
 
 exit 0
