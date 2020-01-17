@@ -23,4 +23,9 @@ echo "Publishing..."
 cd $csmMainMenuBuilt
 npm publish
 
-exit 1
+# Updating Version Number
+git add .
+git commit -m "Updating Version Number"
+git push origin master
+
+exit 0
