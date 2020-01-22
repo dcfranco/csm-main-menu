@@ -5,6 +5,7 @@ import { CsmSideBarComponent } from '../components/side-bar/csm-side-bar.compone
 import { CsmMenuRenderComponent } from '../components/menu-render/csm-menu-render.component';
 import { CsmFilterPipe } from '../pipes/csm-filter.pipe';
 import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CommonModule } from '@angular/common';
     ApplicationModule,
     CommonModule,
     FormsModule,
+    RouterModule,
   ],
   exports: [
     CsmMainMenuComponent,

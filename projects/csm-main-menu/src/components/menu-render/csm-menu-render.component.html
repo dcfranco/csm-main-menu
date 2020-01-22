@@ -15,7 +15,7 @@
       <h2>{{ item.label }}</h2>
       <div class="menu-item-countries">
         <a
-          href="#"
+          routerLink="/view/{{ item.route }}"
           class="menu-item-country"
           *ngFor="let view of item.views"
           (click)="onViewClick(view)"
