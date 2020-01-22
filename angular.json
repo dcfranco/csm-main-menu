@@ -13,7 +13,7 @@
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "tsConfig": "projects/csm-main-menu/tsconfig.lib.json",
-            "project": "projects/csm-main-menu/ng-package.json",
+            "project": "projects/csm-main-menu/ng-package.json"
           }
         },
         "test": {
