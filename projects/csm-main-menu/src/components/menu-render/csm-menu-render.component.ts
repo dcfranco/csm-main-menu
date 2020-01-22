@@ -14,6 +14,8 @@ export class CsmMenuRenderComponent {
 
   constructor() {}
 
-  onViewClick(view: ISideBarOptionItemView) {
+  onViewClick() {
+    this.option = null;
+    this.search = null;
   }
 }
