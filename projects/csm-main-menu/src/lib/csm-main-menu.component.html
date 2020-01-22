@@ -1,7 +1,7 @@
 <div class="app-container">
   <csm-side-bar class="sidebar" [metadata]="metadata" (changeOption)="onOptionChange($event)"></csm-side-bar>
   <main class="content">
-    <csm-menu-render [option]="option"></csm-menu-render>
+    <csm-menu-render [option]="option" (changeOption)="onOptionChange($event)"></csm-menu-render>
     <ng-content></ng-content>
   </main>
 </div>

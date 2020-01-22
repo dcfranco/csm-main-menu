@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ISideBarOption, ISideBarOptionItemView } from '../../interfaces';
 
 @Component({
@@ -7,6 +7,9 @@ import { ISideBarOption, ISideBarOptionItemView } from '../../interfaces';
   styleUrls: ['./csm-menu-render.component.scss']
 })
 export class CsmMenuRenderComponent {
+  @Output()
+  public changeOption: EventEmitter<ISideBarOption> = new EventEmitter<ISideBarOption>();
+
   @Input()
   public option: ISideBarOption;
   public originalOption: ISideBarOption;
@@ -15,7 +18,6 @@ export class CsmMenuRenderComponent {
   constructor() {}
 
   onViewClick() {
-    this.option = null;
-    this.search = null;
+    this.changeOption.emit(null);
   }
 }

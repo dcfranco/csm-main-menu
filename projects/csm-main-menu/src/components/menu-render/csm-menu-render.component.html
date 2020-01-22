@@ -17,7 +17,7 @@
         <a
           class="menu-item-country"
           *ngFor="let view of item.views"
-          (click)="onViewClick(view)"
+          (click)="onViewClick()"
           [routerLink]="view.route"
         >
           <i [class]="view.country"></i>
