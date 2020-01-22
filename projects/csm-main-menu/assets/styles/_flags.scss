@@ -1,0 +1,38 @@
+.BR,
+.CH,
+.PY,
+.PT,
+.AR,
+.UK,
+.UY {
+  display: inline-block;
+  background: $flags-sprite-url;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  width: 16px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.BR {
+  background-position: -0px -0px;
+}
+.CH {
+  background-position: -16px -0px;
+}
+.PY {
+  background-position: -0px -10px;
+}
+.PT {
+  background-position: -16px -10px;
+}
+.AR {
+  background-position: -0px -20px;
+}
+.UK {
+  background-position: -16px -20px;
+}
+.UY {
+  background-position: -0px -30px;
+}
